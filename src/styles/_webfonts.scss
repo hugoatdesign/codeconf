@@ -81,3 +81,43 @@
 .icon-clover_line:before {
   content: "\e94f";
 }
+
+// League Spartan
+@font-face {
+  font-family: "League Spartan";
+  src: url("../fonts/league_spartan/LeagueSpartanVariable.woff2")
+      format("woff2"),
+    url("../fonts/league_spartan/LeagueSpartanVariable.ttf") format("truetype");
+}
+
+// Maven Pro
+@font-face {
+  font-family: "Maven";
+  src: url("../fonts/maven_pro/MavenPro-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+// Museo
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/museo/museo300.woff2") format("woff2"),
+    url("../fonts/museo/museo300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/museo/museo500.woff2") format("woff2"),
+    url("../fonts/museo/museo500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/museo/museo700.woff2") format("woff2"),
+    url("../fonts/museo/museo700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
