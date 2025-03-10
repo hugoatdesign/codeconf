@@ -36,19 +36,30 @@
     margin-inline-end: 1rem;
   }
 
+  &__menu > &__link:last-child {
+    z-index: 1;
+  }
+
   &__icon {
     font-size: 24px;
   }
 
   &__list {
+    font-size: 2rem;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
     position: absolute;
+    padding-block: 16px 64px;
     inset: 0;
     inset-inline: 100vw -100vw;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
     background-color: #3c1bb2;
+  }
+
+  &__item {
+    margin-block: 1rem;
   }
 }
