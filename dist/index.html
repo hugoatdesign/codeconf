@@ -8,260 +8,296 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="header">
-          <h1 class="header__title">
-            <a class="header__link" href="#"
-              ><img
-                class="header__logo_img"
-                src="images/logos_assets_codeconf/logo2025-purple.svg"
-                alt="CodeConf 2025 logo"
-              />CodeConf 2025</a
-            >
-          </h1>
-          <nav class="header__nav">
-            <div class="header__nav nav_mobile">
-              <div class="nav_mobile__menu">
-                <a href="#" class="nav_mobile__link"
-                  ><span class="nav_mobile__icon icon-schedule"></span
-                ></a>
-                <a href="#" class="nav_mobile__link"
-                  ><span class="nav_mobile__icon icon-burger"></span
-                ></a>
-              </div>
-              <ul class="nav_mobile__list">
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link"
-                    ><span class="icon-loop"></span
-                  ></a>
+      <header class="page_header">
+        <h1 class="page_header__title">
+          <a href="#" class="page_header__link">
+            <img
+              src="images/logos_assets_codeconf/logo2025-purple.svg"
+              alt="CodeConf 2025 logo"
+              class="page_header__logo"
+            />
+            CodeConf 2025
+          </a>
+        </h1>
+        <nav class="page_header__nav nav">
+          <div class="nav__mobile nav_mobile">
+            <div class="nav_mobile__icons">
+              <a href="#" class="nav_mobile__link">
+                <span class="nav_mobile__icon icon-schedule"></span>
+              </a>
+              <a href="#" class="nav_mobile__link">
+                <span class="nav_mobile__icon icon-burger"></span>
+              </a>
+            </div>
+            <ul class="nav_mobile__menu_list">
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Schedule</a>
+              </li>
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Event</a>
+              </li>
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Speakers</a>
+              </li>
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Team</a>
+              </li>
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Contact</a>
+              </li>
+              <li class="nav_mobile__item">
+                <a href="#" class="nav_mobile__link">Get Tickets</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__desktop nav_desktop">
+            <div class="nav_desktop__menu">
+              <ul class="nav_desktop__menu_list">
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">Event</a>
                 </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">Schedule</a>
+                <li class="nav_desktop__item--separator">|</li>
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">Speakers</a>
                 </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">Event</a>
+                <li class="nav_desktop__item--separator">|</li>
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">Team</a>
                 </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">Speakers</a>
+                <li class="nav_desktop__item--separator">|</li>
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">Contact</a>
                 </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">Team</a>
+              </ul>
+              <ul class="nav_desktop__menu_btns">
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">
+                    <span class="icon-schedule"></span>
+                    Schedule
+                  </a>
                 </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">Contact</a>
-                </li>
-                <li class="nav_mobile__item">
-                  <a href="#" class="nav_mobile__link">GetTickets</a>
+                <li class="nav_desktop__item">
+                  <a href="#" class="nav_desktop__link">
+                    <span class="nav_desktop__icon icon-loop"></span>
+                  </a>
                 </li>
               </ul>
             </div>
-
-            <div class="header__nav nav_desk">
-              <ul class="nav_desk__list">
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_desk__link">Event</a>
-                </li>
-                <li class="nav_desk__item">|</li>
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_desk__link">Speakers</a>
-                </li>
-                <li class="nav_desk__item">|</li>
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_desk__link">Team</a>
-                </li>
-                <li class="nav_desk__item">|</li>
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_desk__link">Contact</a>
-                </li>
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_desk__link">Schedule</a>
-                </li>
-                <li class="nav_desk__item">
-                  <a href="#" class="nav_mobile__link"
-                    ><span class="icon-loop"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
-      <main>
-        <div class="banner">
-          <picture>
-            <source
+      <main class="page_main">
+        <h1 class="page_main__title">Speakers</h1>
+        <section class="banner">
+          <picture class="banner__pict"
+            ><source
               srcset="images/page-picture/presents@3x.png"
-              media="(min-width: 900px)"
+              media="(min-width: 1024px)"
             />
             <source
               srcset="images/page-picture/presents@2x.png"
-              media="(min-width: 600px)"
+              media="(min-width: 768px)"
             />
             <img
               src="images/page-picture/presents.png"
               alt="A man presenting a conference"
-              class="banner__image"
             />
           </picture>
-
           <h1 class="banner__title">Speaker Edition 2025</h1>
-        </div>
+          <p class="banner__desc">
+            Discover the speakers and the topics or suggest your own topic for
+            our next event
+          </p>
+        </section>
+
         <div class="breadcrumbs"></div>
 
-        <div class="speakers">
-          <h1 class="speakers__title">Speakers</h1>
-          <div class="speakers__card">
-            <picture class="speakers__pic">
-              <img
-                src="images/orators/chris@3x.jpg"
-                alt="Photo of Chris Coyier"
-              />
-            </picture>
-            <h2 class="speakers__name">Chris Coyier</h2>
-            <span class="speakers__city">Milwaukee, WI</span>
-            <div class="speakers_conf">
-              <h2 class="speakers_conf__title">
+        <section class="speakers_gallery">
+          <h1 class="speakers_gallery__title">Speakers</h1>
+          <!-- Idéalement on ajoute les speakers via le javascript
+          ==> BDD -> boucle pour générer les cartes -->
+          <section class="speakers_gallery__card speaker">
+            <header class="speaker__header">
+              <h2 class="speaker__name">Chris Coyier</h2>
+              <p class="speaker__location">Milwaukee, WI</p>
+              <picture class="speaker__pict">
+                <img
+                  src="images/orators/chris@3x.jpg"
+                  alt="Photo of Chris Coyier"
+                />
+              </picture>
+            </header>
+            <div class="speaker__details">
+              <h3 class="speaker__topic">
                 The All-Powerful Front-End Developer
-              </h2>
-              <p class="speakers_conf__desc">
+              </h3>
+              <p class="speaker__desc">
                 Without servers, we'd have no way to share our creations with
                 the world
               </p>
-              <span class="speakers_conf__time icon-hour">10:15 am</span>
-              <span class="speakers_conf__room">R1</span>
-              <a href="#" class="speakers_conf__btn">About</a>
             </div>
-          </div>
-        </div>
-
-        <div class="become_speaker">
-          <h2 class="become_speaker__title">Become speaker</h2>
+            <footer class="speaker__footer">
+              <p class="speaker__infos">
+                <time datetime="09:30" class="speaker__time">09:30 am</time>
+                <span class="speaker__room">R1</span>
+                <a href="#" class="speaker__about">About</a>
+              </p>
+            </footer>
+          </section>
+        </section>
+        <section class="become_speaker">
+          <h1 class="become_speaker__title">Become speaker</h1>
           <h3 class="become_speaker__subtitle">
             Do you have a topic that you like?
           </h3>
           <p class="become_speaker__desc">
             Submit it for the next event by filling out the form below. Do not
-            forget to specify the subject and the related keywords
+            forget to specify the subject and the related keywords.
           </p>
           <form action="" class="become_speaker__form">
-            <label for="" class="become_speaker__label">Name*</label>
-            <input type="text" class="become_speaker__field" required />
-            <label for="" class="become_speaker__label">Mail*</label>
-            <input type="email" class="become_speaker__field" required />
-            <label for="" class="become_speaker__label">Your Subject*</label>
-            <input type="text" class="become_speaker__field" required />
-            <label for="" class="become_speaker__label">Keywords*</label>
-            <input type="text" class="become_speaker__field" required />
-            <label for="" class="become_speaker__field">Short details*</label>
-            <textarea name="" id="" required></textarea>
-            <button>Send your subject</button>
+            <label for="name" class="become_speaker__label">Name*</label>
+            <input
+              id="name"
+              type="text"
+              class="become_speaker__field"
+              required
+            />
+            <label for="mail" class="become_speaker__label">Mail*</label>
+            <input
+              id="mail"
+              type="email"
+              class="become_speaker__field"
+              required
+            />
+            <label for="subject" class="become_speaker__label"
+              >Your Subject*</label
+            >
+            <input
+              id="subject"
+              type="text"
+              class="become_speaker__field"
+              required
+            />
+            <label for="keywords" class="become_speaker__label"
+              >Keywords*</label
+            >
+            <input
+              id="keywords"
+              type="text"
+              class="become_speaker__field"
+              required
+            />
+            <label for="details" class="become_speaker__field"
+              >Short details*</label
+            >
+            <textarea name="details" id="details" required></textarea>
+            <button class="become_speaker__btn">Send your subject</button>
           </form>
-          <p class="become_speaker__to_cta">
-            or just participate to the present event...
+          <p class="become_speaker__participate">
+            or just participate to the present event
           </p>
-          <a href="#" class="become_speaker__cta"
-            >get tickets
-            <span class="icon-paypal"><span class="icon-card"></span></span
-          ></a>
-        </div>
+          <a href="#" class="become_speaker__tickets">
+            get tickets
+            <span class="icon-paypal"></span>
+            <span class="icon-card"></span>
+          </a>
+        </section>
       </main>
 
-      <footer>
-        <div class="footer">
-          <h1 class="footer__title">Footer</h1>
-          <div class="location">
-            <h2 class="location__title">The Las Vegas Convention Center</h2>
-            <div class="location__address">
-              3150 Paradise Rd, Las Vegas, NV 89109
-            </div>
-            <p class="location__desc">
-              The Las Vegas Convention Center (LVCC), located adjacent to the
-              Las Vegas Strip, encompasses approximately 3.2 million square feet
-              with exhibit space of 2 million square feet and meeting space of
-              nearly 250,000 square feet.
-            </p>
-            <img
-              class="location__pic"
-              src="images/page-picture/lasvegas_conventioncenter.png"
-              alt="Las Vegas convention center"
-            />
+      <footer class="page_footer">
+        <h1 class="page_footer__title">Footer</h1>
+        <div class="page_footer__location location">
+          <h2 class="location__title">The Las Vegas Convention Center</h2>
+          <div class="location__address">
+            3150 Paradise Rd, Las Vegas, NV 89109
           </div>
-          <div class="helpdesk">
-            <h2 class="helpdesk__title">Helpdesk Call-center</h2>
-            <p class="helpdesk__phone">+1 702-892-0711 (speaker's support)</p>
-          </div>
-          <div class="sponsors">
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/cisco.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/amazon_s3.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/nick.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/meetup.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/stripe.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-            <div class="sponsor">
-              <h3 class="sponsor_title">
-                <img
-                  src="images/logos_assets_codeconf/mailchimp.svg"
-                  alt=""
-                  class="sponsor_image"
-                />
-              </h3>
-            </div>
-          </div>
-          <div class="socials">
-            <h2 class="socials__title">Follow US</h2>
-            <div class="social">
-              <span class="icon-twitter">@codeconf2025</span>
-            </div>
-            <div class="social">
-              <span class="icon-slack">#codeconf2025</span>
-            </div>
-          </div>
-          <div class="credits">
-            <h2 class="credits__title">CodeConf</h2>
-            <p class="credits__desc">organized by WebeesMeetups.com</p>
-          </div>
-          <span class="copyrights">©CodeConf 2025</span>
+          <p class="location__desc">
+            The Las Vegas Convention Center (LVCC), located adjacent to the Las
+            Vegas Strip, encompasses approximately 3.2 million square feet with
+            exhibit space of 2 million square feet and meeting space of nearly
+            250,000 square feet.
+          </p>
+          <img
+            class="location__pic"
+            src="images/page-picture/lasvegas_conventioncenter.png"
+            alt="Las Vegas convention center"
+          />
         </div>
+        <div class="page_footer__helpdesk helpdesk">
+          <h2 class="helpdesk__title">Helpdesk Call-center</h2>
+          <p class="helpdesk__phone">+1 702-892-0711 (speaker's support)</p>
+        </div>
+        <div class="page_footer__sponsors">
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/cisco.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/amazon_s3.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/nick.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/meetup.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/stripe.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor_title">
+              <img
+                src="images/logos_assets_codeconf/mailchimp.svg"
+                alt=""
+                class="sponsor_image"
+              />
+            </h3>
+          </div>
+        </div>
+        <div class="page_footer_socials socials">
+          <h2 class="socials__title">Follow US</h2>
+          <div class="social">
+            <span class="icon-twitter">@codeconf2025</span>
+          </div>
+          <div class="social">
+            <span class="icon-slack">#codeconf2025</span>
+          </div>
+        </div>
+        <div class="page_footer__credits credits">
+          <h2 class="credits__title">CodeConf</h2>
+          <p class="credits__desc">organized by WebeesMeetups.com</p>
+        </div>
+        <span class="page_footer__copyrights">©CodeConf 2025</span>
       </footer>
     </div>
   </body>
