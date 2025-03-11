@@ -2,6 +2,33 @@
 
 .page_header {
   // media queries
+  @media screen and (max-width: $mobile) {
+    padding-inline: 1rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-inline: 3rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    margin: auto;
+
+    &__nav_burger,
+    .mobile-only {
+      display: none;
+    }
+
+    &__nav_list {
+      padding-inline-end: 0.5;
+    }
+
+    &__nav_item,
+    &__nav_separator {
+      padding-inline-start: 0.75rem;
+    }
+  }
+
   @media screen and (max-width: $tablet) {
     &__nav_desktop,
     &__nav_separator {
@@ -21,22 +48,6 @@
       background-color: purple;
 
       flex-direction: column;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    &__nav_burger,
-    .mobile-only {
-      display: none;
-    }
-
-    &__nav_list {
-      padding-inline-end: 0.5;
-    }
-
-    &__nav_item,
-    &__nav_separator {
-      padding-inline-start: 0.75rem;
     }
   }
 
