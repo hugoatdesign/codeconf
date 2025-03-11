@@ -6,13 +6,13 @@
     padding-inline: 1rem;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
     padding-inline: 3rem;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     max-width: 1280px;
-    margin: auto;
+    margin-inline: 64px;
 
     &__nav_burger,
     .mobile-only {
@@ -30,6 +30,9 @@
   }
 
   @media screen and (max-width: $tablet) {
+    min-height: 64px;
+    padding-block: 1rem;
+
     &__nav_desktop,
     &__nav_separator {
       display: none;

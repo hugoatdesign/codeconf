@@ -1,0 +1,121 @@
+@import "variables";
+
+.banner {
+  // media queries
+  @media screen and (max-width: $mobile) {
+    padding-inline: 1rem;
+
+    &::before {
+      margin-inline-start: -16px;
+      margin-block-start: -12px;
+      content: "";
+      height: 1.5rem;
+      width: 8rem;
+      background: url("../images/elts/pattern-stripes-left.png");
+      background-size: 8rem 1.5rem;
+      position: absolute;
+    }
+
+    &::after {
+      margin-block-start: -12px;
+      content: "";
+      height: 1.5rem;
+      width: 6rem;
+      background: url("../images/elts/pattern_stripes.png");
+      background-size: 6rem 1.5rem;
+      position: absolute;
+      inset-inline: auto 0;
+      inset-block: 0;
+    }
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    padding-inline: 3rem;
+
+    &::before {
+      margin-inline-start: -64px;
+      margin-block-start: -16px;
+      content: "";
+      height: 2rem;
+      width: 12rem;
+      background: url("../images/elts/pattern-stripes-left.png");
+      background-size: 12rem 2rem;
+      position: absolute;
+    }
+
+    &::after {
+      margin-block-start: -16px;
+      content: "";
+      height: 2rem;
+      width: 9rem;
+      background: url("../images/elts/pattern_stripes.png");
+      background-size: 12rem 2rem;
+      position: absolute;
+      inset-inline: auto 0;
+      inset-block: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__frame {
+      max-width: var(--desk-max-width);
+      margin-inline: 64px;
+    }
+
+    &::before {
+      margin-block-start: -16px;
+      content: "";
+      height: 2rem;
+      width: 12rem;
+      background: url("../images/elts/pattern-stripes-left.png");
+      background-size: 12rem 2rem;
+      position: absolute;
+    }
+
+    &::after {
+      margin-block-start: -16px;
+      content: "";
+      height: 2rem;
+      width: 9rem;
+      background: url("../images/elts/pattern_stripes.png");
+      background-size: 12rem 2rem;
+      position: absolute;
+      inset-inline: auto 0;
+      inset-block: 0;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    &__desc {
+      display: none;
+    }
+  }
+
+  position: relative;
+  background-color: purple;
+
+  &__frame {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pict {
+    transform: translateX(-16px);
+    margin-block-start: -3.25rem;
+    margin-block-end: -3.5px;
+  }
+
+  &__title {
+    position: absolute;
+    align-self: flex-end;
+    font-family: Museo, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    & > span::after {
+      content: "\A";
+      white-space: pre;
+    }
+    color: white;
+  }
+}
