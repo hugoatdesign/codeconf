@@ -1,6 +1,6 @@
 @import "variables";
 
-.header {
+.page_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,33 +10,38 @@
   }
 }
 
-.nav_mobile,
-.nav_desk {
-  &__list {
-    list-style: none;
-    padding: 0;
+.nav {
+  min-height: 64px;
+  margin-block: 1rem;
+
+  &__mobile {
+    display: flex;
+    margin-block: 2rem;
   }
 
-  &__link {
-    color: black;
-    text-decoration: none;
-  }
-}
-
-.nav_mobile {
-  display: flex;
-  margin-block: 2rem;
-
-  &__menu {
+  &__desktop {
     display: flex;
     align-items: center;
   }
 
-  &__menu > &__link:first-child {
+  &__mobile > &__menu,
+  &__desktop > &__menu {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.nav_mobile {
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icons > &__link:first-child {
     margin-inline-end: 1rem;
   }
 
-  &__menu > &__link:last-child {
+  &__icons > &__link:last-child {
     z-index: 1;
   }
 
@@ -44,7 +49,8 @@
     font-size: 24px;
   }
 
-  &__list {
+  &__menu_list {
+    // not working
     font-size: 2rem;
     margin: 0;
     display: flex;
@@ -57,9 +63,78 @@
     inset-inline: 100vw -100vw;
     padding-inline: 3rem;
     background-color: #3c1bb2;
+    display: none;
   }
 
   &__item {
     margin-block: 1rem;
+  }
+}
+
+.nav_desktop {
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu_list,
+  &__menu_btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu_btns > &__item {
+    padding-inline-start: 1.5rem;
+  }
+
+  &__menu_btns &__item:first-child > &__link {
+    color: #4f4370;
+  }
+
+  &__menu_btns &__item:last-child > &__link {
+    color: #ff0000;
+  }
+
+  &__item,
+  &__item--separator {
+    padding-inline-start: 0.5rem;
+  }
+}
+
+.nav_mobile,
+.nav_desktop {
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__menu_list,
+  &__menu_btns {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .nav {
+    &__mobile {
+      display: flex;
+    }
+
+    &__desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .nav {
+    &__mobile {
+      display: none;
+    }
+
+    &__desktop {
+      display: flex;
+    }
   }
 }

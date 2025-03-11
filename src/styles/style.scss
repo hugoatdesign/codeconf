@@ -10,23 +10,3 @@ img {
   max-width: 100%;
   aspect-ratio: 1;
 }
-
-@media screen and (max-width: $desktop) {
-  .nav_desk {
-    display: none;
-  }
-
-  .nav_mobile {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .nav_desk {
-    display: flex;
-  }
-
-  .nav_mobile {
-    display: none;
-  }
-}
