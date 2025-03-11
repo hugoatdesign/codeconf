@@ -16,79 +16,61 @@
               alt="CodeConf 2025 logo"
               class="page_header__logo"
             />
-            CodeConf 2025
+            <span class="sr-only">CodeConf 2025</span>
           </a>
         </h1>
-        <nav class="page_header__nav nav">
-          <div class="nav__mobile nav_mobile">
-            <div class="nav_mobile__icons">
-              <a href="#" class="nav_mobile__link">
-                <span class="nav_mobile__icon icon-schedule"></span>
+        <nav class="page_header__nav">
+          <ul class="page_header__nav_list">
+            <li class="page_header__nav_item mobile-only">
+              <a href="#" class="page_header__nav_link">
+                <span class="icon-loop"></span>
               </a>
-              <a href="#" class="nav_mobile__link">
-                <span class="nav_mobile__icon icon-burger"></span>
-              </a>
-            </div>
-            <ul class="nav_mobile__menu_list">
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Schedule</a>
-              </li>
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Event</a>
-              </li>
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Speakers</a>
-              </li>
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Team</a>
-              </li>
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Contact</a>
-              </li>
-              <li class="nav_mobile__item">
-                <a href="#" class="nav_mobile__link">Get Tickets</a>
-              </li>
-            </ul>
+            </li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link mobile-only">Schedule</a>
+            </li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link">Event</a>
+            </li>
+            <li class="page_header__nav_separator">|</li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link">Speakers</a>
+            </li>
+            <li class="page_header__nav_separator">|</li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link">Team</a>
+            </li>
+            <li class="page_header__nav_separator">|</li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link">Contact</a>
+            </li>
+            <li class="page_header__nav_item">
+              <a href="#" class="page_header__nav_link mobile-only"
+                >Get Tickets</a
+              >
+            </li>
+          </ul>
+          <div class="page_header__nav_desktop">
+            <a href="#" class="page_header__nav_link">
+              <span class="icon-schedule"></span>
+              Schedule
+            </a>
+            <a href="" class="page_header__nav_link">
+              <span class="icon-loop"></span>
+            </a>
           </div>
-          <div class="nav__desktop nav_desktop">
-            <div class="nav_desktop__menu">
-              <ul class="nav_desktop__menu_list">
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">Event</a>
-                </li>
-                <li class="nav_desktop__item--separator">|</li>
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">Speakers</a>
-                </li>
-                <li class="nav_desktop__item--separator">|</li>
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">Team</a>
-                </li>
-                <li class="nav_desktop__item--separator">|</li>
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">Contact</a>
-                </li>
-              </ul>
-              <ul class="nav_desktop__menu_btns">
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">
-                    <span class="icon-schedule"></span>
-                    Schedule
-                  </a>
-                </li>
-                <li class="nav_desktop__item">
-                  <a href="#" class="nav_desktop__link">
-                    <span class="nav_desktop__icon icon-loop"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="page_header__nav_burger">
+            <a href="#" class="page_header__nav_link">
+              <span class="icon-schedule"></span>
+            </a>
+            <a href="#" class="page_header__nav_link">
+              <span class="icon-burger"></span>
+            </a>
           </div>
         </nav>
       </header>
-
       <main class="page_main">
-        <h1 class="page_main__title">Speakers</h1>
+        <h1 class="page_main__title sr-only">Speakers</h1>
         <section class="banner">
           <picture class="banner__pict"
             ><source
