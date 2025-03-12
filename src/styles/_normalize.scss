@@ -9,6 +9,19 @@
 body {
   margin: 0;
   font-family: Maven, sans-serif;
+  background-color: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  aspect-ratio: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .sr-only {
@@ -23,12 +36,6 @@ body {
   width: 1px !important;
   white-space: nowrap !important;
 }
-
-// @media screen and (max-width: $tablet) {
-//   .desktop-only {
-//     display: none;
-//   }
-// }
 
 @media screen and (min-width: $tablet) {
   .mobile-only {
