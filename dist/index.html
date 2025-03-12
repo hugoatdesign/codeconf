@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speakers | CodeConf 2025</title>
-    <link rel="stylesheet" href="styles/style.min.css" />
+    <link rel="stylesheet" href="styles/styles.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -69,10 +69,11 @@
           </div>
         </nav>
       </header>
+
       <main class="page_main">
         <h1 class="page_main__title sr-only">Speakers</h1>
         <section class="banner">
-          <div class="banner__frame">
+          <div class="banner__content">
             <picture class="banner__pict"
               ><source
                 srcset="images/page-picture/presents@3x.png"
@@ -472,12 +473,13 @@
       </main>
 
       <footer class="page_footer">
-        <h1 class="page_footer__title">Footer</h1>
-        <div class="page_footer__location location">
+        <h1 class="page_footer__title sr-only">Footer</h1>
+        <section class="location">
           <h2 class="location__title">The Las Vegas Convention Center</h2>
-          <div class="location__address">
+          <p class="location__address">
+            <span class="location__address_icon icon-pin"></span>
             3150 Paradise Rd, Las Vegas, NV 89109
-          </div>
+          </p>
           <p class="location__desc">
             The Las Vegas Convention Center (LVCC), located adjacent to the Las
             Vegas Strip, encompasses approximately 3.2 million square feet with
@@ -489,81 +491,80 @@
             src="images/page-picture/lasvegas_conventioncenter.png"
             alt="Las Vegas convention center"
           />
-        </div>
-        <div class="page_footer__helpdesk helpdesk">
-          <h2 class="helpdesk__title">Helpdesk Call-center</h2>
-          <p class="helpdesk__phone">+1 702-892-0711 (speaker's support)</p>
-        </div>
-        <div class="page_footer__sponsors">
+        </section>
+        <section class="helpdesk">
+          <p class="helpdesk__infos">
+            Helpdesk Call-center
+            <span class="helpdesk__phone">+1 702-892-0711</span>
+          </p>
+          <a href="#" class="helpdesk__link">(speaker's support)</a>
+        </section>
+        <section class="sponsors">
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/cisco.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">Cisco</h3>
+            <img
+              src="images/logos_assets_codeconf/cisco.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/amazon_s3.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">Amazon Web Services</h3>
+            <img
+              src="images/logos_assets_codeconf/amazon_s3.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/nick.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">Nickelodeon</h3>
+            <img
+              src="images/logos_assets_codeconf/nick.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/meetup.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">Meetup</h3>
+            <img
+              src="images/logos_assets_codeconf/meetup.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/stripe.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">Stripe</h3>
+            <img
+              src="images/logos_assets_codeconf/stripe.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
           <div class="sponsor">
-            <h3 class="sponsor_title">
-              <img
-                src="images/logos_assets_codeconf/mailchimp.svg"
-                alt=""
-                class="sponsor_image"
-              />
-            </h3>
+            <h3 class="sponsor__title sr-only">MailChimp</h3>
+            <img
+              src="images/logos_assets_codeconf/mailchimp.svg"
+              alt=""
+              class="sponsor__image"
+            />
           </div>
-        </div>
-        <div class="page_footer_socials socials">
+        </section>
+        <section class="socials">
           <h2 class="socials__title">Follow US</h2>
-          <div class="social">
-            <span class="icon-twitter">@codeconf2025</span>
-          </div>
-          <div class="social">
-            <span class="icon-slack">#codeconf2025</span>
-          </div>
-        </div>
-        <div class="page_footer__credits credits">
-          <h2 class="credits__title">CodeConf</h2>
+          <a href="#" class="socials__link">
+            <span class="socials__icon icon-slack"></span>
+            <span class="socials__name">#codeconf2025</span>
+          </a>
+          <a href="#" class="socials__link">
+            <span class="socials__icon icon-tw"></span>
+            <span class="socials__name">@codeconf2025</span>
+          </a>
+        </section>
+        <section class="credits">
+          <h2 class="credits__title sr-only">CodeConf</h2>
           <p class="credits__desc">organized by WebeesMeetups.com</p>
-        </div>
-        <span class="page_footer__copyrights">©CodeConf 2025</span>
+          <span class="credits__copyrights">©CodeConf 2025</span>
+        </section>
       </footer>
     </div>
   </body>
