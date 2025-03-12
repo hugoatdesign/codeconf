@@ -1,104 +1,162 @@
 @import "variables";
 
+// Global Header Styling
 .page_header {
-  // media queries
-  @media screen and (max-width: $mobile) {
-    padding-inline: 1rem;
-  }
-
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
-    padding-inline: 3rem;
-  }
-
-  @media screen and (min-width: $tablet) {
-    max-width: 1280px;
-    margin-inline: 64px;
-
-    &__nav_burger,
-    .mobile-only {
-      display: none;
-    }
-
-    &__nav_list {
-      padding-inline-end: 0.5;
-    }
-
-    &__nav_item,
-    &__nav_separator {
-      padding-inline-start: 0.75rem;
-    }
-  }
-
-  @media screen and (max-width: $tablet) {
-    min-height: 64px;
-    padding-block: 1rem;
-
-    &__nav_desktop,
-    &__nav_separator {
-      display: none;
-    }
-
-    &__nav {
-      flex-direction: row-reverse;
-    }
-
-    &__nav_list {
-      position: absolute;
-      inset: 0;
-      inset-inline: -100vw 100vw;
-      margin: 0;
-
-      background-color: purple;
-
-      flex-direction: column;
-    }
-  }
-
-  // page header
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__title {
-    transform: translateY(5px);
+    transform: translateY(6px);
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__nav_list {
-    // removing list style
-    list-style: none;
-    padding: 0;
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
 
+  &__nav_list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+  }
+
   &__nav_link {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
   }
+}
 
-  &__nav_desktop {
-    padding-inline-start: 0.5rem;
+// Media Queries
+// Padding
+@media screen and (max-width: $mobile) {
+  .page_header {
+    padding-inline: var(--mobile-padding);
   }
+}
 
-  &__nav_desktop > &__nav_link:first-child {
-    padding-inline-end: 1rem;
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .page_header {
+    padding-inline: var(--tablet-padding);
   }
+}
 
-  &__nav_burger > &__nav_link {
-    font-size: 1.25rem;
-    padding-inline-start: 0.5rem;
+@media screen and (min-width: $tablet) {
+  .page_header {
+    max-width: var(--desk-max-width);
+    padding-inline: var(--desktop-padding);
+    margin: auto;
   }
+}
 
-  &__nav_burger > &__nav_link:last-child {
-    position: relative;
-    z-index: 1;
+// Styling
+@media screen and (max-width: $tablet) {
+  .page_header {
+    &__title {
+      position: relative;
+      z-index: 1;
+    }
+
+    &__nav {
+      font-size: 32px;
+    }
+
+    &__nav_list {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      position: absolute;
+      inset: 0;
+      inset-inline: -100vw 100vw;
+      margin: 0;
+      padding-block-end: 32px;
+
+      background-color: var(--menu-bg);
+    }
+
+    &__nav_item > &__nav_link {
+      display: flex;
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+    }
+
+    &__nav_item:last-child > &__nav_link {
+      color: var(--primary-accent);
+    }
+
+    &__nav_link {
+      color: white;
+    }
+
+    &__nav_separator {
+      display: none;
+    }
+
+    &__nav_desktop {
+      display: none;
+    }
+
+    &__nav_burger > &__nav_link {
+      font-size: var(--icon-size-mobile);
+      padding: 0.5rem;
+      color: black;
+    }
+
+    &__nav_burger > &__nav_link:last-child {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .page_header {
+    &__nav {
+      font-size: 18px;
+      font-family: Maven, sans-serif;
+      font-weight: 500;
+    }
+
+    &__nav_list {
+      margin-inline-end: 1rem;
+    }
+
+    &__nav_link {
+      padding-inline: 0.5rem;
+      padding-block: 1rem;
+    }
+
+    &__nav_separator {
+      align-self: center;
+    }
+
+    &__nav_burger {
+      display: none;
+    }
+
+    &__nav_desktop {
+      align-self: center;
+    }
+
+    &__nav_desktop > &__nav_link {
+      span {
+        display: inline-block;
+        transform: translateY(1px);
+      }
+    }
+
+    &__nav_desktop > &__nav_link:first-child {
+      color: var(--secondary-accent);
+      span {
+        margin-inline-end: 4px;
+      }
+    }
+
+    &__nav_desktop > &__nav_link:last-child {
+      color: var(--primary-accent);
+    }
   }
 }

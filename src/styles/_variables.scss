@@ -5,4 +5,14 @@ $desktop: 1024px;
 
 :root {
   --desk-max-width: 1280px;
+  --mobile-padding: 1rem; // 16px
+  --tablet-padding: 4rem; // 64px
+  --desktop-padding: 4rem; // 64px
+
+  --icon-size-mobile: 1.5rem; // 20px
+
+  // Colors
+  --primary-accent: #f84c1c;
+  --secondary-accent: #4b436a;
+  --menu-bg: #3c1bb2;
 }
