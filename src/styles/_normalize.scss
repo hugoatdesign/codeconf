@@ -17,13 +17,6 @@ img {
   aspect-ratio: 1;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
